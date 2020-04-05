@@ -35,7 +35,7 @@ spec:
       - name: position-simulator
         image: richardchesterwood/k8s-fleetman-position-simulator:release1
         env:
-          - name: SPRING_PROFILE_ACTIVE
+          - name: SPRING_PROFILES_ACTIVE
             value: production-microservice            
 ---
 
@@ -57,5 +57,5 @@ spec:
       - name: position-tracker
         image: richardchesterwood/k8s-fleetman-position-tracker:release1
         env:
-          - name: SPRING_PROFILE_ACTIVE
+          - name: SPRING_PROFILES_ACTIVE
             value: production-microservice        
