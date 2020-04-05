@@ -37,6 +37,7 @@ spec:
         env:
           - name: SPRING_PROFILE_ACTIVE
             value: production-microservice  
+        imagePullPolicy: Always    
 ---
 
 apiVersion: apps/v1
@@ -58,4 +59,5 @@ spec:
         image: richardchesterwood/k8s-fleetman-position-traker:release1
         env:
           - name: SPRING_PROFILE_ACTIVE
-            value: production-microservice             
+            value: production-microservice 
+        imagePullPolicy: Always     
