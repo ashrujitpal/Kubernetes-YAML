@@ -36,4 +36,26 @@ spec:
         image: richardchesterwood/k8s-fleetman-position-simulator:release1
         env:
           - name: SPRING_PROFILE_ACTIVE
-            value: production-microservice          
+            value: production-microservice  
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: position-traker
+spec:
+  selector:
+    matchLabels:
+      app: position-traker
+  replicas: 1
+  template:
+    metadata:
+      labels: 
+        app: position-traker
+    spec:
+      containers:
+      - name: position-simulator
+        image: richardchesterwood/k8s-fleetman-position-traker:release1
+        env:
+          - name: SPRING_PROFILE_ACTIVE
+            value: production-microservice             
