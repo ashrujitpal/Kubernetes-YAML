@@ -1,6 +1,6 @@
 #What do we want
 apiVersion: v1
-kind: persistentVolumeClaim
+kind: PersistentVolumeClaim
 metadata: mongo_pvc
 spec:
   storageClassName: mylocalstorage
