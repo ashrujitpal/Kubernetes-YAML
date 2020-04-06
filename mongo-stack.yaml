@@ -18,10 +18,10 @@ spec:
         volumeMounts:
           - name: mongo-persistent-storage
             mountPath: /data/db
-        volumes:
-          - name:
-            persistentVolumeClaim:
-              claimName: mongo_pvc            
+      volumes:
+        - name:
+          persistentVolumeClaim:
+            claimName: mongo_pvc            
 
 ---
 
