@@ -1,7 +1,8 @@
 #What do we want
 apiVersion: v1
 kind: PersistentVolumeClaim
-metadata: mongo_pvc
+metadata: 
+  name: mongo_pvc
 spec:
   storageClassName: mylocalstorage
   accessModes:
