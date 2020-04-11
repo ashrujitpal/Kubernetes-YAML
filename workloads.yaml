@@ -17,10 +17,10 @@ spec:
         image: richardchesterwood/k8s-fleetman-queue:release2 
         resources:
           requests:
-            momory: 200Mi
+            memory: 200Mi
             cpu: 100m
           limits:
-            momory: 400Mi
+            memory: 400Mi
             cpu: 200m  
 ---
 
@@ -46,10 +46,10 @@ spec:
             value: production-microservice 
         resources:
           requests:
-            momory: 200Mi
+            memory: 200Mi
             cpu: 100m
           limits:
-            momory: 400Mi
+            memory: 400Mi
             cpu: 200m              
 ---
 
@@ -75,10 +75,10 @@ spec:
             value: production-microservice  
         resources:
           requests:
-            momory: 200Mi
+            memory: 200Mi
             cpu: 100m
           limits:
-            momory: 400Mi
+            memory: 400Mi
             cpu: 200m    
 ---
 
@@ -104,10 +104,10 @@ spec:
             value: production-microservice 
         resources:
           requests:
-            momory: 200Mi
+            memory: 200Mi
             cpu: 100m
           limits:
-            momory: 400Mi
+            memory: 400Mi
             cpu: 200m          
 
 ---
